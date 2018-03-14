@@ -50,6 +50,12 @@ app.get('/projects', (req, res) => {
   });
 });
 
+app.get('/contact', (req, res) => {
+  res.render('contact.hbs', {
+    pageTitle: 'Contact',
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Error',
